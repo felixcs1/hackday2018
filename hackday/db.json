@@ -217,26 +217,47 @@
   "questions": [
     {
       "id": 1,
-      "questionText": "jkashdkjas1",
+      "questionText": "test",
+      "imageURL": "",
       "answers": [
-        {"answerText":"yes", "numberOfVotes": 0},
-        {"answerText":"no", "numberOfVotes": 0}
+        {
+          "answerText": "yes",
+          "numberOfVotes": 0
+        },
+        {
+          "answerText": "no",
+          "numberOfVotes": 0
+        }
       ]
     },
     {
       "id": 2,
-      "questionText": "jkashdkjas2",
+      "questionText": "",
+      "imageURL": "",
       "answers": [
-        {"answerText":"yes", "numberOfVotes": 0},
-        {"answerText":"no", "numberOfVotes": 0}
+        {
+          "answerText": "yes",
+          "numberOfVotes": 0
+        },
+        {
+          "answerText": "no",
+          "numberOfVotes": 0
+        }
       ]
     },
     {
       "id": 3,
-      "questionText": "jkashdkjas3",
+      "questionText": "",
+      "imageURL": "",
       "answers": [
-        {"answerText":"yes", "numberOfVotes": 0},
-        {"answerText":"no", "numberOfVotes": 0}
+        {
+          "answerText": "yes",
+          "numberOfVotes": 0
+        },
+        {
+          "answerText": "no",
+          "numberOfVotes": 0
+        }
       ]
     }
   ]
