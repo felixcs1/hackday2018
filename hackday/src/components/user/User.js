@@ -29,6 +29,7 @@ class User extends Component {
                     questionText={item.questionText}
                     questionId={item.id}
                     questionAnswers={item.answers}
+                    rawData={this.state.result}
                 />
             );
         });
