@@ -11,7 +11,7 @@ export default class QuestionForm extends React.Component {
         return (
             <Container>
                 <div>
-                    <Form className="question">
+                    <Form className="question" id={`myform-${this.props.id}`}>
                         <FormGroup id={`question-${this.props.id}`} row>
                             <Label for="exampleEmail" sm={2}>Question</Label>
                             <Col sm={10}>
