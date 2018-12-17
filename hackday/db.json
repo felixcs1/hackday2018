@@ -217,23 +217,23 @@
   "questions": [
     {
       "id": 1,
-      "questionText": "ddfhg",
-      "imageURL": "Arachnids-in-the-UK-spider.jpg",
+      "questionText": "Did you like this episode?",
+      "imageURL": "episode.jpg",
       "answers": [
         {
           "answerText": "yes",
-          "numberOfVotes": "64"
+          "numberOfVotes": "0"
         },
         {
           "answerText": "no",
-          "numberOfVotes": "39"
+          "numberOfVotes": "0"
         }
       ]
     },
     {
       "id": 2,
-      "questionText": "Question 2",
-      "imageURL": "",
+      "questionText": "Was this episode scary?",
+      "imageURL": "Arachnids-in-the-UK-spider.jpg",
       "answers": [
         {
           "answerText": "yes",
@@ -247,16 +247,16 @@
     },
     {
       "id": 3,
-      "questionText": "Question 3",
-      "imageURL": "",
+      "questionText": "Do you like this guy?",
+      "imageURL": "randompic.jpeg",
       "answers": [
         {
           "answerText": "yes",
-          "numberOfVotes": "1"
+          "numberOfVotes": "0"
         },
         {
           "answerText": "no",
-          "numberOfVotes": "1"
+          "numberOfVotes": "0"
         }
       ]
     }

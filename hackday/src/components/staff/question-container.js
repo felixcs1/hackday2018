@@ -8,6 +8,7 @@ export default class QuestionContainer extends React.Component {
         this.state = {fadeIn: true};
         this.toggle = this.toggle.bind(this)
         this.saveData = this.saveData.bind(this)
+        this.clearData = this.clearData.bind(this)
     }
 
     render() {
@@ -23,7 +24,7 @@ export default class QuestionContainer extends React.Component {
                     <h3>Question 3</h3>
                     <QuestionForm id={3}></QuestionForm>
                 </div>
-                <Button className="no-btn" size="lg">Cancel</Button>
+                <Button className="no-btn" size="lg" onClick={this.clearData}>Cancel</Button>
                 <Button className="yes-btn" size="lg" onClick={this.saveData}>Save</Button>
             </div>
         );
@@ -50,6 +51,11 @@ export default class QuestionContainer extends React.Component {
 
     }
 
+    clearData() {
+        document.getElementById("myform-1").reset();
+        document.getElementById("myform-2").reset();
+        document.getElementById("myform-3").reset();
+    }
 
     toggle() {
         this.setState({
