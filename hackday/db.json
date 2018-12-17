@@ -218,17 +218,26 @@
     {
       "id": 1,
       "questionText": "jkashdkjas1",
-      "answers": ["yes","no"]
+      "answers": [
+        {"answerText":"yes", "numberOfVotes": 0},
+        {"answerText":"no", "numberOfVotes": 0}
+      ]
     },
     {
       "id": 2,
       "questionText": "jkashdkjas2",
-      "answers": ["yes","no"]
+      "answers": [
+        {"answerText":"yes", "numberOfVotes": 0},
+        {"answerText":"no", "numberOfVotes": 0}
+      ]
     },
     {
       "id": 3,
       "questionText": "jkashdkjas3",
-      "answers": ["yes","no"]
+      "answers": [
+        {"answerText":"yes", "numberOfVotes": 0},
+        {"answerText":"no", "numberOfVotes": 0}
+      ]
     }
   ]
 }
