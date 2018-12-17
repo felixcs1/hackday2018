@@ -1,5 +1,5 @@
 import React from 'react';
-import {FormGroup, Label, Input, Fade, Button, ButtonGroup, Card, CardTitle, CardImg, CardBody} from 'reactstrap';
+import {FormGroup, Label, Input, Fade, Button, ButtonGroup, Card, CardTitle, CardImg, CardBody, Container} from 'reactstrap';
 import './answer-container.css';
 
 export default class AnswerContainer extends React.Component {
@@ -15,29 +15,45 @@ export default class AnswerContainer extends React.Component {
     render() {
         const image = process.env.PUBLIC_URL + `/${this.props.questionImage}`;
         return (
-            <Card className="answer-container">
-                <CardImg src={image} />
-                <CardBody>
-                    <CardTitle>{this.props.questionText}</CardTitle>
-                    <ButtonGroup>
-                        {this.props.questionAnswers.map(
-                            (ans) => {
-                                return this.makeAnswer(this.props.questionId, ans)
-                            }
-                        )}
-                    </ButtonGroup>
-                    {this.state.answered && this.generatePoll()}
-                </CardBody>
-            </Card>
+            <Container>
+                <Card className="answer-container">
+                    <CardImg src={image} />
+                    <CardBody>
+                        <CardTitle>{this.props.questionText}</CardTitle>
+                        <ButtonGroup>
+                            {this.props.questionAnswers.map(
+                                (ans) => {
+                                    return this.makeAnswer(this.props.questionId, ans)
+                                }
+                            )}
+                        </ButtonGroup>
+                        {this.state.answered && this.generatePoll()}
+                    </CardBody>
+                </Card>
+            </Container>
         );
     }
 
     makeAnswer(questionId, ans) {
-        const col = ans.answerText === "yes" ? "success" : "danger";
+        if( ans.answerText === "yes" ) {
+            return (
+                <div>
+                    <Button
+                        className="yes-btn"
+                        size="lg"
+                        name={`${questionId}`}
+                        onClick={(event) => this.submitAnswer(questionId, ans.answerText === "yes" ? 0 : 1)}
+                    >
+                        {ans.answerText}
+                    </Button>
+                </div>
+            );
+        }
         return (
-             <div>
+            <div>
                 <Button
-                    color={col}
+                    className="no-btn"
+                    size="lg"
                     name={`${questionId}`}
                     onClick={(event) => this.submitAnswer(questionId, ans.answerText === "yes" ? 0 : 1)}
                 >
@@ -50,8 +66,8 @@ export default class AnswerContainer extends React.Component {
     generatePoll() {
         return(
             <div>
-                <div>YES: {this.state.yes.toFixed(0)}%</div>
-                <div>NO: {this.state.no.toFixed(0)}%</div>
+                <div className="yes">YES: {this.state.yes.toFixed(0)}%</div>
+                <div className="no">NO: {this.state.no.toFixed(0)}%</div>
             </div>
         );
     }

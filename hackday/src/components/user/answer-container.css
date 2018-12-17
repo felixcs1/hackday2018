@@ -1,7 +1,29 @@
 .answer-container {
-    background: #DDD;
+    background: #282c34;
+    border-radius: 10px;
+    padding: 10px;
     width: 600px;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.yes {
+    color: #f54997;
+}
+
+.no {
+    color: white;
+}
+
+.yes-btn {
+    background-color: #f54997 !important;
+    border-color: #f54997 !important;
+    margin: 10px;
+    border-radius: 50% !important;
+}
+
+.no-btn {
+    margin: 10px;
+    border-radius: 50% !important;
 }
