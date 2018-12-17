@@ -1,5 +1,5 @@
 import React from 'react';
-import {FormGroup, Label, Input, Fade, Button, ButtonGroup} from 'reactstrap';
+import {FormGroup, Label, Input, Fade, Button, ButtonGroup, Card, CardTitle, CardImg, CardBody} from 'reactstrap';
 import './answer-container.css';
 
 export default class AnswerContainer extends React.Component {
@@ -13,18 +13,22 @@ export default class AnswerContainer extends React.Component {
     }
 
     render() {
+        const image = process.env.PUBLIC_URL + `/${this.props.questionImage}`;
         return (
-            <div className="answer-container">
-                <h3>{this.props.questionText}</h3>
-                <ButtonGroup>
-                    {this.props.questionAnswers.map(
-                        (ans) => {
-                            return this.makeAnswer(this.props.questionId, ans)
-                        }
-                    )}
-                </ButtonGroup>
-                {this.state.answered && this.generatePoll()}
-            </div>
+            <Card className="answer-container">
+                <CardImg src={image} />
+                <CardBody>
+                    <CardTitle>{this.props.questionText}</CardTitle>
+                    <ButtonGroup>
+                        {this.props.questionAnswers.map(
+                            (ans) => {
+                                return this.makeAnswer(this.props.questionId, ans)
+                            }
+                        )}
+                    </ButtonGroup>
+                    {this.state.answered && this.generatePoll()}
+                </CardBody>
+            </Card>
         );
     }
 
