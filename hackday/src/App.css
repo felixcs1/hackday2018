@@ -56,3 +56,7 @@ h3 {
 .nav-text {
   color: white !important;
 }
+
+.form-control {
+  background-color: #EEEEEE !important;
+}
