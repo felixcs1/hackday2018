@@ -1,5 +1,5 @@
 import React from 'react';
-import {FormGroup, Label, Input, Fade, Button, ButtonGroup} from 'reactstrap';
+import {FormGroup, Label, Input, Fade, Button, ButtonGroup, Container} from 'reactstrap';
 import './answer-container.css';
 
 export default class AnswerContainer extends React.Component {
@@ -14,26 +14,42 @@ export default class AnswerContainer extends React.Component {
 
     render() {
         return (
-            <div className="answer-container">
-                <h3>{this.props.questionText}</h3>
-                <ButtonGroup>
-                    {this.props.questionAnswers.map(
-                        (ans) => {
-                            return this.makeAnswer(this.props.questionId, ans)
-                        }
-                    )}
-                </ButtonGroup>
-                {this.state.answered && this.generatePoll()}
-            </div>
+            <Container>
+                <div className="answer-container">
+                    <h3>{this.props.questionText}</h3>
+                    <ButtonGroup>
+                        {this.props.questionAnswers.map(
+                            (ans) => {
+                                return this.makeAnswer(this.props.questionId, ans)
+                            }
+                        )}
+                    </ButtonGroup>
+                    {this.state.answered && this.generatePoll()}
+                </div>
+            </Container>
         );
     }
 
     makeAnswer(questionId, ans) {
-        const col = ans.answerText === "yes" ? "success" : "danger";
+        if( ans.answerText === "yes" ) {
+            return (
+                <div>
+                    <Button
+                        className="yes-btn"
+                        size="lg"
+                        name={`${questionId}`}
+                        onClick={(event) => this.submitAnswer(questionId, ans.answerText === "yes" ? 0 : 1)}
+                    >
+                        {ans.answerText}
+                    </Button>
+                </div>
+            );
+        }
         return (
-             <div>
+            <div>
                 <Button
-                    color={col}
+                    className="no-btn"
+                    size="lg"
                     name={`${questionId}`}
                     onClick={(event) => this.submitAnswer(questionId, ans.answerText === "yes" ? 0 : 1)}
                 >
@@ -46,8 +62,8 @@ export default class AnswerContainer extends React.Component {
     generatePoll() {
         return(
             <div>
-                <div>YES: {this.state.yes.toFixed(0)}%</div>
-                <div>NO: {this.state.no.toFixed(0)}%</div>
+                <div className="yes">YES: {this.state.yes.toFixed(0)}%</div>
+                <div className="no">NO: {this.state.no.toFixed(0)}%</div>
             </div>
         );
     }

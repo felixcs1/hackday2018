@@ -7,6 +7,14 @@
   background-color: #0d0f1d;
 }
 
+label {
+  color: white;
+}
+
+h3 {
+  color: white !important;
+}
+
 .App {
   text-align: center;
   background: #0d0f1d;
@@ -26,7 +34,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #f54997;
   margin-bottom: 20px;
 }
 
