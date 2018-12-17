@@ -28,6 +28,7 @@ class User extends Component {
                 <AnswerContainer
                     questionText={item.questionText}
                     questionId={item.id}
+                    questionAnswers={item.answers}
                 />
             );
         });

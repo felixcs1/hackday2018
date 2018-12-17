@@ -1,5 +1,6 @@
 import React from 'react';
 import {FormGroup, Label, Input, Fade} from 'reactstrap';
+import './answer-container.css';
 
 export default class AnswerContainer extends React.Component {
     constructor(props) {
@@ -8,22 +9,25 @@ export default class AnswerContainer extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="answer-container">
                 <div>{this.props.questionText}</div>
-                <FormGroup check>
-                    <Label check>
-                        <Input type="radio" name={`radio-${this.props.questionId}`} />{' '}
-                        This is a radio button
-                    </Label>
+                <FormGroup>
+                    {this.props.questionAnswers.map(
+                        (ans) => { return this.makeAnswer(this.props.questionId, ans) }
+                    )}
                 </FormGroup>
             </div>
         );
     }
 
-
-    // toggle() {
-    //     this.setState({
-    //         fadeIn: !this.state.fadeIn
-    //     });
-    // }
+    makeAnswer(questionId, answerText) {
+        return (
+            <FormGroup check>
+                <Label check>
+                    <Input type="radio" name={`radio-${questionId}`}/>{' '}
+                    {answerText}
+                </Label>
+            </FormGroup>
+        );
+    }
 };
