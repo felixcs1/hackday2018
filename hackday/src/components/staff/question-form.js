@@ -11,18 +11,18 @@ export default class QuestionForm extends React.Component {
         return (
             <div>
                 <Form>
-                    <FormGroup row>
+                    <FormGroup id={`question-${this.props.id}`} row>
                         <Label for="exampleEmail" sm={2}>Question</Label>
                         <Col sm={10}>
-                            <Input type="text" name="text" id="exampleEmail" placeholder="Enter a question" sm={12}/>
+                            <Input type="text" name="text" className="question-text" placeholder="Enter a question" sm={12}/>
                         </Col>
                     </FormGroup>
-                    <FormGroup row>
-                        <Label for="exampleEmail" sm={2}>Image</Label>
-                        <Col sm={10}>
-                            <Input type="file" name="file" id="exampleFile" sm={12} />
-                        </Col>
-                    </FormGroup>
+                    {/*<FormGroup row>*/}
+                        {/*<Label for="exampleEmail" sm={2}>Image</Label>*/}
+                        {/*<Col sm={10}>*/}
+                            {/*<Input type="file" name="file" id="exampleFile" sm={12} />*/}
+                        {/*</Col>*/}
+                    {/*</FormGroup>*/}
                 </Form>
             </div>
         );
