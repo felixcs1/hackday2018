@@ -1,5 +1,5 @@
 import React from 'react';
-import {FormGroup, Label, Input, Fade, Button, ButtonGroup, Card, CardTitle, CardImg, CardBody, Container} from 'reactstrap';
+import {FormGroup, Label, Input, Fade, Button, ButtonGroup, Card, CardTitle, CardImg, CardBody, Container, Progress} from 'reactstrap';
 import './answer-container.css';
 
 export default class AnswerContainer extends React.Component {
@@ -67,7 +67,10 @@ export default class AnswerContainer extends React.Component {
         return(
             <div>
                 <div className="yes">YES: {this.state.yes.toFixed(0)}%</div>
+                <Progress className="yesBar" value={this.state.yes.toFixed(0)}  />
+
                 <div className="no">NO: {this.state.no.toFixed(0)}%</div>
+                <Progress className="noBar" value={this.state.no.toFixed(0)} />
             </div>
         );
     }
