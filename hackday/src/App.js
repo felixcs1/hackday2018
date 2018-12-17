@@ -21,7 +21,7 @@ class App extends Component {
           <div className="App">
               <NavbarCustom></NavbarCustom>
 
-            <header row className="App-header" >
+            <header className="App-header" >
                 <Col sm={6}>
                     <h1 className="header series-title">Doctor Who</h1>
                     <h2 className="header episode-subtitle">Series 11: 4. Arachnids in the UK</h2>

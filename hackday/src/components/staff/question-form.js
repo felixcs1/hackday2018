@@ -10,7 +10,7 @@ export default class QuestionForm extends React.Component {
     render() {
         return (
             <div>
-                <Form>
+                <Form className="question">
                     <FormGroup id={`question-${this.props.id}`} row>
                         <Label for="exampleEmail" sm={2}>Question</Label>
                         <Col sm={10}>

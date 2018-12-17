@@ -217,15 +217,16 @@
   "questions": [
     {
       "id": 1,
-      "questionText": "Question 1",
+      "questionText": "ddfhg",
+      "imageURL": "Arachnids-in-the-UK-spider.jpg",
       "answers": [
         {
           "answerText": "yes",
-          "numberOfVotes": "8"
+          "numberOfVotes": "0"
         },
         {
           "answerText": "no",
-          "numberOfVotes": "7"
+          "numberOfVotes": "0"
         }
       ]
     },
