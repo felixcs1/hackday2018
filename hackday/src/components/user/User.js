@@ -37,15 +37,9 @@ class User extends Component {
 
 
     render() {
-
-        // this.state.result.map();
-
         return (
             <div>
-
                 {this.renderData()}
-
-
             </div>
         )
     }
