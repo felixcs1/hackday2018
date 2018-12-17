@@ -14,10 +14,11 @@ export default class QuestionContainer extends React.Component {
     render() {
         return (
             <div>
-                <QuestionForm></QuestionForm>
-                <QuestionForm></QuestionForm>
-                <QuestionForm></QuestionForm>
-
+                <div className={"questions-container"}>
+                    <QuestionForm id={1}></QuestionForm>
+                    <QuestionForm id={2}></QuestionForm>
+                    <QuestionForm id={3}></QuestionForm>
+                </div>
                 <Button color="danger">Cancel</Button>
                 <Button color="success" onClick={this.saveData}>Save</Button>
             </div>
@@ -25,13 +26,20 @@ export default class QuestionContainer extends React.Component {
     }
 
     saveData() {
-        fetch("http://localhost:3000/questions/")
-            .then(function(response) {
-                return response.json();
+        document.querySelectorAll(".question-text")
+            .forEach((question, i) => {
+            console.log('Question', i+1, ': ', question.value);
+            fetch(`http://localhost:3000/questions/${i+1}`, {
+                method: 'PUT',
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({"id": `${i+1}`, "question-text": `${question.value}`, "answers": ["yes","no"]})
             })
-            .then(function(myJson) {
-                console.log(JSON.stringify(myJson));
-            });
+                .then(response => response.json())
+                .catch(error => console.error('Error:', error))
+                .then(response => console.log('Success:', JSON.stringify(response)));
+        });
     }
 
     toggle() {
