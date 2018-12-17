@@ -1,3 +1,234 @@
 {
-  "questions": "test db file"
+  "episodes": [
+    {
+      "id": "b0bqn236",
+      "live": false,
+      "type": "episode_large",
+      "title": "Doctor Who",
+      "images": {
+        "type": "image",
+        "standard": "https://ichef.bbci.co.uk/images/ic/464x261/p06pvlym.jpg"
+      },
+      "labels": {
+        "category": "Sci-Fi"
+      },
+      "signed": true,
+      "status": "available",
+      "tleo_id": "b006q2x0",
+      "guidance": false,
+      "subtitle": "Series 11: 4. Arachnids in the UK",
+      "synopses": {
+        "large": "'Something's happening with the spiders in this city.' The Doctor, Yaz, Graham and Ryan find their way back to Yorkshire - and Yaz's family - only to find something is stirring amidst the eight-legged arachnid population of Sheffield.",
+        "small": "Something is very wrong with the spiders of Sheffield. The Doctor and friends investigate.",
+        "medium": "In Yorkshire, the Doctor and friends meet Yaz's family - and uncover a creepy mystery at the heart of the city. What is happening to the spiders of Sheffield?",
+        "editorial": "The Doctor meets Yaz's family - and uncovers a creepy mystery at the heart of Sheffield."
+      },
+      "versions": [
+        {
+          "hd": true,
+          "id": "b0br9np4",
+          "uhd": false,
+          "kind": "editorial",
+          "type": "version_large",
+          "events": [
+            {
+              "name": "started",
+              "offset": 30,
+              "system": "uas"
+            },
+            {
+              "name": "ended",
+              "offset": 2873,
+              "system": "uas"
+            },
+            {
+              "name": "iplxp-ep-started",
+              "offset": 30,
+              "system": "optimizely"
+            },
+            {
+              "name": "iplxp-ep-watched",
+              "offset": 2666,
+              "system": "optimizely"
+            },
+            {
+              "name": "iplxp-ep-started",
+              "offset": 30,
+              "system": "dax"
+            },
+            {
+              "name": "iplxp-ep-watched",
+              "offset": 2666,
+              "system": "dax"
+            }
+          ],
+          "download": true,
+          "duration": {
+            "text": "49 mins",
+            "value": "PT49M22.760S"
+          },
+          "availability": {
+            "end": "2019-06-09T19:50:00Z",
+            "start": "2018-10-28T19:50:00Z",
+            "remaining": {
+              "text": "Available for 6 months"
+            }
+          },
+          "credits_start": 2962,
+          "first_broadcast": "28 Oct 2018"
+        },
+        {
+          "hd": false,
+          "id": "p06q45kl",
+          "uhd": false,
+          "kind": "audio-described",
+          "type": "version_large",
+          "events": [
+            {
+              "name": "started",
+              "offset": 30,
+              "system": "uas"
+            },
+            {
+              "name": "ended",
+              "offset": 2874,
+              "system": "uas"
+            },
+            {
+              "name": "iplxp-ep-started",
+              "offset": 30,
+              "system": "optimizely"
+            },
+            {
+              "name": "iplxp-ep-watched",
+              "offset": 2667,
+              "system": "optimizely"
+            },
+            {
+              "name": "iplxp-ep-started",
+              "offset": 30,
+              "system": "dax"
+            },
+            {
+              "name": "iplxp-ep-watched",
+              "offset": 2667,
+              "system": "dax"
+            }
+          ],
+          "download": false,
+          "duration": {
+            "text": "49 mins",
+            "value": "PT49M23.640S"
+          },
+          "availability": {
+            "end": "2019-06-09T19:50:00Z",
+            "start": "2018-10-28T20:33:43Z",
+            "remaining": {
+              "text": "Available for 6 months"
+            }
+          },
+          "first_broadcast": "28 Oct 2018"
+        },
+        {
+          "hd": true,
+          "id": "b0bqn5pl",
+          "uhd": false,
+          "kind": "signed",
+          "type": "version_large",
+          "events": [
+            {
+              "name": "started",
+              "offset": 30,
+              "system": "uas"
+            },
+            {
+              "name": "ended",
+              "offset": 2873,
+              "system": "uas"
+            },
+            {
+              "name": "iplxp-ep-started",
+              "offset": 30,
+              "system": "optimizely"
+            },
+            {
+              "name": "iplxp-ep-watched",
+              "offset": 2666,
+              "system": "optimizely"
+            },
+            {
+              "name": "iplxp-ep-started",
+              "offset": 30,
+              "system": "dax"
+            },
+            {
+              "name": "iplxp-ep-watched",
+              "offset": 2666,
+              "system": "dax"
+            }
+          ],
+          "download": true,
+          "duration": {
+            "text": "49 mins",
+            "value": "PT49M22.760S"
+          },
+          "availability": {
+            "end": "2019-06-15T03:40:00Z",
+            "start": "2018-11-03T03:40:00Z",
+            "remaining": {
+              "text": "Available for 7 months"
+            }
+          },
+          "first_broadcast": "28 Oct 2018"
+        }
+      ],
+      "parent_id": "p06jcmy9",
+      "tleo_type": "brand",
+      "categories": [
+        "audio-described",
+        "drama-and-soaps",
+        "drama-sci-fi-and-fantasy",
+        "signed"
+      ],
+      "has_credits": true,
+      "master_brand": {
+        "id": "bbc_one",
+        "titles": {
+          "large": "BBC One",
+          "small": "BBC One",
+          "medium": "BBC One"
+        },
+        "ident_id": "p06g87jc",
+        "attribution": "bbc_one"
+      },
+      "release_date": "28 Oct 2018",
+      "related_links": [],
+      "original_title": "Arachnids in the UK",
+      "programme_type": "narrative",
+      "audio_described": true,
+      "parent_position": 4,
+      "requires_sign_in": true,
+      "release_date_time": "2018-10-28T00:00:00.000Z",
+      "editorial_subtitle": "4/10 Arachnids in the UK. Something’s stirring...",
+      "lexical_sort_letter": "D",
+      "requires_tv_licence": true
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question-text": "jkashdkjas",
+      "answers": ["yes","no"]
+    },
+    {
+      "id": 2,
+      "question-text": "jkashdkjas",
+      "answers": ["yes","no"]
+    },
+    {
+      "id": 3,
+      "question-text": "jkashdkjas",
+      "answers": ["yes","no"]
+    }
+  ]
 }

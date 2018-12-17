@@ -25,9 +25,13 @@ export default class QuestionContainer extends React.Component {
     }
 
     saveData() {
-        fetch()
-
-
+        fetch("http://localhost:3000/questions/")
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(myJson) {
+                console.log(JSON.stringify(myJson));
+            });
     }
 
     toggle() {
