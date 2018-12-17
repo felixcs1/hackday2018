@@ -222,11 +222,11 @@
       "answers": [
         {
           "answerText": "yes",
-          "numberOfVotes": 0
+          "numberOfVotes": "14"
         },
         {
           "answerText": "no",
-          "numberOfVotes": 0
+          "numberOfVotes": "0"
         }
       ]
     },
@@ -237,11 +237,11 @@
       "answers": [
         {
           "answerText": "yes",
-          "numberOfVotes": 0
+          "numberOfVotes": "0"
         },
         {
           "answerText": "no",
-          "numberOfVotes": 0
+          "numberOfVotes": "13"
         }
       ]
     },
@@ -252,11 +252,11 @@
       "answers": [
         {
           "answerText": "yes",
-          "numberOfVotes": 0
+          "numberOfVotes": "12"
         },
         {
           "answerText": "no",
-          "numberOfVotes": 0
+          "numberOfVotes": "5"
         }
       ]
     }

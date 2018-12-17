@@ -29,6 +29,7 @@ class User extends Component {
                     questionText={item.questionText}
                     questionId={item.id}
                     questionAnswers={item.answers}
+                    rawData={this.state.result}
                 />
             );
         });
@@ -37,15 +38,9 @@ class User extends Component {
 
 
     render() {
-
-        // this.state.result.map();
-
         return (
             <div>
-
                 {this.renderData()}
-
-
             </div>
         )
     }
