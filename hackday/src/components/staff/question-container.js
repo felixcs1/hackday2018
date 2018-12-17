@@ -34,7 +34,7 @@ export default class QuestionContainer extends React.Component {
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify({"id": `${i+1}`, "question-text": `${question.value}`, "answers": ["yes","no"]})
+                body: JSON.stringify({"id": `${i+1}`, "questionText": `${question.value}`, "answers": ["yes","no"]})
             })
                 .then(response => response.json())
                 .catch(error => console.error('Error:', error))
