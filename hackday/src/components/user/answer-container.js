@@ -6,6 +6,10 @@ export default class AnswerContainer extends React.Component {
     constructor(props) {
         super(props);
         this.data = {};
+        this.state = { answered: false, yes: 0, no: 0 };
+
+        this.submitAnswer = this.submitAnswer.bind(this)
+        this.generatePoll = this.generatePoll.bind(this)
     }
 
     render() {
@@ -19,6 +23,7 @@ export default class AnswerContainer extends React.Component {
                         }
                     )}
                 </ButtonGroup>
+                {this.state.answered && this.generatePoll()}
             </div>
         );
     }
@@ -26,7 +31,7 @@ export default class AnswerContainer extends React.Component {
     makeAnswer(questionId, ans) {
         const col = ans.answerText === "yes" ? "success" : "danger";
         return (
-            <div>
+             <div>
                 <Button
                     color={col}
                     name={`${questionId}`}
@@ -34,6 +39,15 @@ export default class AnswerContainer extends React.Component {
                 >
                     {ans.answerText}
                 </Button>
+            </div>
+        );
+    }
+
+    generatePoll() {
+        return(
+            <div>
+                <div>YES: {this.state.yes.toFixed(0)}%</div>
+                <div>NO: {this.state.no.toFixed(0)}%</div>
             </div>
         );
     }
@@ -53,19 +67,10 @@ export default class AnswerContainer extends React.Component {
                 }
             );
 
-
         const answers = this.data.answers;
-
-        console.log(answers)
 
         const yesVotes = parseInt(answers[0].numberOfVotes);
         const noVotes = parseInt(answers[1].numberOfVotes);
-
-
-
-        console.log('yes', yesVotes);
-        console.log('no', noVotes);
-
 
         const newYes = valueId === 0 ? yesVotes + 1 : yesVotes;
         const newNo = valueId === 1 ? noVotes + 1 : noVotes;
@@ -89,15 +94,19 @@ export default class AnswerContainer extends React.Component {
                 ]
             })
         })
-            .then(response => response.json())
-            .catch(error => console.error('Error:', error))
-            .then(response => console.log('Success:', JSON.stringify(response)));
+        .then(response => response.json())
+        .catch(error => console.error('Error:', error))
+        .then(response => console.log('Success:', JSON.stringify(response)))
+        .then(() => {this.setState({
+            answered: true,
+            yes: yesPerc,
+            no: noPerc,
+        })});
 
 
 
 
 
 
-        // console.log(event)
     }
 };
