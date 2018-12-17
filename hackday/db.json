@@ -217,16 +217,16 @@
   "questions": [
     {
       "id": 1,
-      "questionText": "test",
-      "imageURL": "",
+      "questionText": "ddfhg",
+      "imageURL": "Arachnids-in-the-UK-spider.jpg",
       "answers": [
         {
           "answerText": "yes",
-          "numberOfVotes": 0
+          "numberOfVotes": "0"
         },
         {
           "answerText": "no",
-          "numberOfVotes": 0
+          "numberOfVotes": "0"
         }
       ]
     },
@@ -237,11 +237,11 @@
       "answers": [
         {
           "answerText": "yes",
-          "numberOfVotes": 0
+          "numberOfVotes": "0"
         },
         {
           "answerText": "no",
-          "numberOfVotes": 0
+          "numberOfVotes": "0"
         }
       ]
     },
@@ -252,11 +252,11 @@
       "answers": [
         {
           "answerText": "yes",
-          "numberOfVotes": 0
+          "numberOfVotes": "0"
         },
         {
           "answerText": "no",
-          "numberOfVotes": 0
+          "numberOfVotes": "0"
         }
       ]
     }
