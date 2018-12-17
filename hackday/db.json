@@ -219,24 +219,42 @@
       "id": 1,
       "questionText": "jkashdkjas1",
       "answers": [
-        {"answerText":"yes", "numberOfVotes": 0},
-        {"answerText":"no", "numberOfVotes": 0}
+        {
+          "answerText": "yes",
+          "numberOfVotes": "14"
+        },
+        {
+          "answerText": "no",
+          "numberOfVotes": "0"
+        }
       ]
     },
     {
       "id": 2,
       "questionText": "jkashdkjas2",
       "answers": [
-        {"answerText":"yes", "numberOfVotes": 0},
-        {"answerText":"no", "numberOfVotes": 0}
+        {
+          "answerText": "yes",
+          "numberOfVotes": "0"
+        },
+        {
+          "answerText": "no",
+          "numberOfVotes": "13"
+        }
       ]
     },
     {
       "id": 3,
       "questionText": "jkashdkjas3",
       "answers": [
-        {"answerText":"yes", "numberOfVotes": 0},
-        {"answerText":"no", "numberOfVotes": 0}
+        {
+          "answerText": "yes",
+          "numberOfVotes": "12"
+        },
+        {
+          "answerText": "no",
+          "numberOfVotes": "5"
+        }
       ]
     }
   ]
