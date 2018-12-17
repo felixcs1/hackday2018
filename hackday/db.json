@@ -217,27 +217,18 @@
   "questions": [
     {
       "id": 1,
-      "question-text": "meh",
-      "answers": [
-        "yes",
-        "no"
-      ]
+      "questionText": "jkashdkjas1",
+      "answers": ["yes","no"]
     },
     {
       "id": 2,
-      "question-text": "",
-      "answers": [
-        "yes",
-        "no"
-      ]
+      "questionText": "jkashdkjas2",
+      "answers": ["yes","no"]
     },
     {
       "id": 3,
-      "question-text": "",
-      "answers": [
-        "yes",
-        "no"
-      ]
+      "questionText": "jkashdkjas3",
+      "answers": ["yes","no"]
     }
   ]
 }
