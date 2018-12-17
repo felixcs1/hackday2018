@@ -8,15 +8,19 @@ export default class QuestionContainer extends React.Component {
         this.state = {fadeIn: true};
         this.toggle = this.toggle.bind(this)
         this.saveData = this.saveData.bind(this)
-        console.log('HELLO');
     }
 
     render() {
         return (
             <div>
                 <div className={"questions-container"}>
+                    <h3>Question 1</h3>
                     <QuestionForm id={1}></QuestionForm>
+                    <hr/>
+                    <h3>Question 2</h3>
                     <QuestionForm id={2}></QuestionForm>
+                    <hr/>
+                    <h3>Question 3</h3>
                     <QuestionForm id={3}></QuestionForm>
                 </div>
                 <Button color="danger">Cancel</Button>
@@ -34,12 +38,16 @@ export default class QuestionContainer extends React.Component {
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify({"id": `${i+1}`, "questionText": `${question.value}`, "answers": ["yes","no"]})
+                body: JSON.stringify({"id": `${i+1}`, "questionText": `${question.value}`, "imageURL": "", "answers": [{"answerText":"yes", "numberOfVotes": 0},
+                        {"answerText":"no", "numberOfVotes": 0}]})
             })
                 .then(response => response.json())
                 .catch(error => console.error('Error:', error))
                 .then(response => console.log('Success:', JSON.stringify(response)));
         });
+
+       document.querySelectorAll(".question-image")
+           .forEach((imageURL) => console.log(imageURL.value))
     }
 
     toggle() {
