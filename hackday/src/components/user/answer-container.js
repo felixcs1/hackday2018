@@ -88,6 +88,7 @@ export default class AnswerContainer extends React.Component {
             body: JSON.stringify({
                 "id": `${questionId}`,
                 "questionText": `${this.data.questionText}`,
+                "imageURL": `${this.data.imageURL}`,
                 "answers": [
                     {"answerText": "yes", "numberOfVotes": `${newYes}`},
                     {"answerText": "no", "numberOfVotes": `${newNo}`},
