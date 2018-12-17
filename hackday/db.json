@@ -218,6 +218,7 @@
     {
       "id": 1,
       "questionText": "ddfhg",
+      "imageURL": "Arachnids-in-the-UK-spider.jpg",
       "answers": [
         {
           "answerText": "yes",
@@ -232,6 +233,7 @@
     {
       "id": 2,
       "questionText": "Question 2",
+      "imageURL": "",
       "answers": [
         {
           "answerText": "yes",
@@ -246,6 +248,7 @@
     {
       "id": 3,
       "questionText": "Question 3",
+      "imageURL": "",
       "answers": [
         {
           "answerText": "yes",

@@ -29,13 +29,12 @@ class User extends Component {
                     questionText={item.questionText}
                     questionId={item.id}
                     questionAnswers={item.answers}
+                    questionImage={item.imageURL}
                     rawData={this.state.result}
                 />
             );
         });
     }
-
-
 
     render() {
         return (
