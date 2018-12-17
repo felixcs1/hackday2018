@@ -23,8 +23,8 @@ export default class QuestionContainer extends React.Component {
                     <h3>Question 3</h3>
                     <QuestionForm id={3}></QuestionForm>
                 </div>
-                <Button color="danger">Cancel</Button>
-                <Button color="success" onClick={this.saveData}>Save</Button>
+                <Button className="no-btn" size="lg">Cancel</Button>
+                <Button className="yes-btn" size="lg" onClick={this.saveData}>Save</Button>
             </div>
         );
     }
@@ -48,19 +48,6 @@ export default class QuestionContainer extends React.Component {
             .then(response => console.log('Success:', JSON.stringify(response)));
         });
 
-       // document.querySelectorAll(".question-image")
-       //     .forEach((imageURL, i) => {
-       //         fetch(`http://localhost:3000/questions/${i + 1}`, {
-       //             method: 'PUT',
-       //             headers: {
-       //                 "Content-Type": "application/json"
-       //             },
-       //             body: JSON.stringify({"imageURL": `${imageURL.value.split('\\')[imageURL.value.split('\\').length - 1]}`})
-       //         })
-       //         .then(response => response.json())
-       //         .catch(error => console.error('Error:', error))
-       //         .then(response => console.log('Success:', JSON.stringify(response)));
-       //     });
     }
 
 
