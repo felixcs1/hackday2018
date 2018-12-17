@@ -217,23 +217,21 @@
   "questions": [
     {
       "id": 1,
-      "questionText": "test",
-      "imageURL": "",
+      "questionText": "Question 1",
       "answers": [
         {
           "answerText": "yes",
-          "numberOfVotes": "14"
+          "numberOfVotes": "8"
         },
         {
           "answerText": "no",
-          "numberOfVotes": "0"
+          "numberOfVotes": "7"
         }
       ]
     },
     {
       "id": 2,
-      "questionText": "",
-      "imageURL": "",
+      "questionText": "Question 2",
       "answers": [
         {
           "answerText": "yes",
@@ -241,22 +239,21 @@
         },
         {
           "answerText": "no",
-          "numberOfVotes": "13"
+          "numberOfVotes": "0"
         }
       ]
     },
     {
       "id": 3,
-      "questionText": "",
-      "imageURL": "",
+      "questionText": "Question 3",
       "answers": [
         {
           "answerText": "yes",
-          "numberOfVotes": "12"
+          "numberOfVotes": "1"
         },
         {
           "answerText": "no",
-          "numberOfVotes": "5"
+          "numberOfVotes": "1"
         }
       ]
     }

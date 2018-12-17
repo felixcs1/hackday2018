@@ -1,12 +1,22 @@
+.html {
+  background-color: #0d0f1d;
+  min-height: 200vh;
+}
+
+.body {
+  background-color: #0d0f1d;
+}
+
 .App {
   text-align: center;
+  background: #0d0f1d;
+  min-height: 200vh;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
-
 
 .App-header {
   background-color: #282c34;
@@ -37,14 +47,4 @@
 
 .nav-text {
   color: white !important;
-}
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
