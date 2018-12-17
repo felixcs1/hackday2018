@@ -16,7 +16,7 @@ export default class AnswerContainer extends React.Component {
         const image = process.env.PUBLIC_URL + `/${this.props.questionImage}`;
         return (
             <Container>
-                <Card className="answer-container">
+                <Card className="answer-container" style={{ backgroundColor: '#262c35', color: 'white'}}>
                     <CardImg src={image} />
                     <CardBody>
                         <CardTitle>{this.props.questionText}</CardTitle>
